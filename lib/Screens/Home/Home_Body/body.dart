@@ -95,7 +95,7 @@ class _Body_PageState extends State<Body_Page> {
             height: 20,
           ),
           Container(
-            margin: const EdgeInsets.only(left: 15, right: 15, bottom: 15),
+            margin: const EdgeInsets.only(left: 25, right: 15, bottom: 15),
             child: Row(
               children: [
                 InkWell(
@@ -115,6 +115,7 @@ class _Body_PageState extends State<Body_Page> {
             thickness: 2,
             height: 5,
             endIndent: 50,
+            indent: 15,
             color: Colors.white,
           ),
           const SizedBox(
@@ -140,6 +141,33 @@ class _Body_PageState extends State<Body_Page> {
                       images: AssetImage("assets/gul ahmad.PNG"),
                     ),
                   ],
+                ),
+                const SizedBox(
+                  height: 20,
+                ),
+                Container(
+                  margin:
+                      const EdgeInsets.only(left: 15, right: 15, bottom: 15),
+                  child: Row(
+                    children: [
+                      InkWell(
+                        onTap: () {},
+                        child: const Text(
+                          "Men's Collection",
+                          style: TextStyle(
+                              fontSize: 20,
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      )
+                    ],
+                  ),
+                ),
+                const Divider(
+                  thickness: 2,
+                  height: 5,
+                  endIndent: 50,
+                  color: Colors.white,
                 ),
                 const SizedBox(
                   height: 20,
