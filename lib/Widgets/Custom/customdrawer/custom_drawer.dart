@@ -79,14 +79,14 @@ class _Custom_DrawerState extends State<Custom_Drawer> {
                   height: 20,
                 ),
                 Drawer_Items(
-                    name: "Men's Collective",
+                    name: "Men's Collection",
                     icon: Icons.collections_outlined,
                     onPressed: () {}),
                 const SizedBox(
                   height: 20,
                 ),
                 Drawer_Items(
-                    name: "Shoes Brands",
+                    name: "Shoes Collection",
                     icon: Icons.shopping_basket_outlined,
                     onPressed: () {}),
                 const SizedBox(

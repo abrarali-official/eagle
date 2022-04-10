@@ -1,6 +1,9 @@
 // ignore_for_file: camel_case_types
-import 'package:eagle/Widgets/Custom/custom_textbox2.dart';
+import 'package:eagle/Widgets/Custom/feature_item.dart';
+import 'package:eagle/Widgets/Custom/w_collection_item.dart';
 import 'package:eagle/Widgets/brands_name.dart';
+import 'package:eagle/Widgets/custom_textbox.dart';
+import 'package:eagle/utils/data.dart';
 import 'package:flutter/material.dart';
 
 class Body_Page extends StatefulWidget {
@@ -66,190 +69,86 @@ class _Body_PageState extends State<Body_Page> {
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             padding: const EdgeInsets.only(bottom: 5, left: 15),
-            child: Row(
-              children: const [
-                Brands_names(
-                  color: Colors.white,
-                  images: AssetImage("assets/gul ahmad.PNG"),
-                ),
-                Brands_names(
-                  color: Colors.white,
-                  images: AssetImage("assets/alkram.PNG"),
-                ),
-                Brands_names(
-                  color: Colors.white,
-                  images: AssetImage("assets/j.PNG"),
-                ),
-                Brands_names(
-                  color: Colors.white,
-                  images: AssetImage("assets/khaadi.PNG"),
-                ),
-                Brands_names(
-                  color: Colors.white,
-                  images: AssetImage("assets/nishat.PNG"),
-                ),
-              ],
+            child: Expanded(
+              child: Row(
+                children: const [
+                  Brands_names(
+                    color: Colors.white,
+                    images: AssetImage("assets/gul ahmad.PNG"),
+                  ),
+                  Brands_names(
+                    color: Colors.white,
+                    images: AssetImage("assets/alkram.PNG"),
+                  ),
+                  Brands_names(
+                    color: Colors.white,
+                    images: AssetImage("assets/j.PNG"),
+                  ),
+                  Brands_names(
+                    color: Colors.white,
+                    images: AssetImage("assets/khaadi.PNG"),
+                  ),
+                  Brands_names(
+                    color: Colors.white,
+                    images: AssetImage("assets/nishat.PNG"),
+                  ),
+                ],
+              ),
             ),
           ),
           const SizedBox(
             height: 20,
+          ),
+//-----------------------------------------------------------------------------------------------------------------------------------------------
+          Container(
+            child: listPopulars(),
+          ),
+          const SizedBox(
+            height: 30,
           ),
           Container(
-            margin: const EdgeInsets.only(left: 25, right: 15, bottom: 15),
-            child: Row(
-              children: [
-                InkWell(
-                  onTap: () {},
-                  child: const Text(
-                    "Women's Collection",
-                    style: TextStyle(
-                        fontSize: 20,
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold),
-                  ),
-                )
-              ],
+            margin: const EdgeInsets.only(left: 15, right: 15),
+            child: const Text(
+              "Featured",
+              style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white),
             ),
           ),
-          const Divider(
-            thickness: 2,
-            height: 5,
-            endIndent: 50,
-            indent: 15,
-            color: Colors.white,
+          const SizedBox(
+            height: 10,
+          ),
+          Container(
+            margin: const EdgeInsets.only(left: 15, right: 15),
+            child: listFeatured(),
           ),
           const SizedBox(
             height: 20,
           ),
-          SingleChildScrollView(
-            scrollDirection: Axis.vertical,
-            padding: const EdgeInsets.only(bottom: 5, left: 15),
-            child: Column(
-              children: [
-                Row(
-                  children: const [
-                    Brands_names(
-                      color: Colors.white,
-                      images: AssetImage("assets/gul ahmad.PNG"),
-                    ),
-                    Brands_names(
-                      color: Colors.white,
-                      images: AssetImage("assets/gul ahmad.PNG"),
-                    ),
-                    Brands_names(
-                      color: Colors.white,
-                      images: AssetImage("assets/gul ahmad.PNG"),
-                    ),
-                  ],
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                Container(
-                  margin:
-                      const EdgeInsets.only(left: 15, right: 15, bottom: 15),
-                  child: Row(
-                    children: [
-                      InkWell(
-                        onTap: () {},
-                        child: const Text(
-                          "Men's Collection",
-                          style: TextStyle(
-                              fontSize: 20,
-                              color: Colors.white,
-                              fontWeight: FontWeight.bold),
-                        ),
-                      )
-                    ],
-                  ),
-                ),
-                const Divider(
-                  thickness: 2,
-                  height: 5,
-                  endIndent: 50,
-                  color: Colors.white,
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                Row(
-                  children: const [
-                    Brands_names(
-                      color: Colors.white,
-                      images: AssetImage("assets/alkram.PNG"),
-                    ),
-                    Brands_names(
-                      color: Colors.white,
-                      images: AssetImage("assets/alkram.PNG"),
-                    ),
-                    Brands_names(
-                      color: Colors.white,
-                      images: AssetImage("assets/alkram.PNG"),
-                    ),
-                  ],
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                Row(
-                  children: const [
-                    Brands_names(
-                      color: Colors.white,
-                      images: AssetImage("assets/alkram.PNG"),
-                    ),
-                    Brands_names(
-                      color: Colors.white,
-                      images: AssetImage("assets/alkram.PNG"),
-                    ),
-                    Brands_names(
-                      color: Colors.white,
-                      images: AssetImage("assets/alkram.PNG"),
-                    ),
-                  ],
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                Row(
-                  children: const [
-                    Brands_names(
-                      color: Colors.white,
-                      images: AssetImage("assets/alkram.PNG"),
-                    ),
-                    Brands_names(
-                      color: Colors.white,
-                      images: AssetImage("assets/alkram.PNG"),
-                    ),
-                    Brands_names(
-                      color: Colors.white,
-                      images: AssetImage("assets/alkram.PNG"),
-                    ),
-                  ],
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                Row(
-                  children: const [
-                    Brands_names(
-                      color: Colors.white,
-                      images: AssetImage("assets/alkram.PNG"),
-                    ),
-                    Brands_names(
-                      color: Colors.white,
-                      images: AssetImage("assets/alkram.PNG"),
-                    ),
-                    Brands_names(
-                      color: Colors.white,
-                      images: AssetImage("assets/alkram.PNG"),
-                    ),
-                  ],
-                ),
-              ],
-            ),
-          )
         ],
       ),
     );
   }
+}
+
+listPopulars() {
+  return SingleChildScrollView(
+    scrollDirection: Axis.horizontal,
+    padding: const EdgeInsets.only(left: 15),
+    child: Row(
+      children: List.generate(
+          populars.length,
+          (index) => PopularItem(
+                data: populars[index],
+              )),
+    ),
+  );
+}
+
+listFeatured() {
+  return Column(
+    children: List.generate(
+        featured.length, (index) => FeaturedItem(data: featured[index])),
+  );
 }

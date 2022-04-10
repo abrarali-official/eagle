@@ -21,7 +21,7 @@ class _AccountPageState extends State<AccountPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         bottomNavigationBar: const CustomNavbar(),
-        backgroundColor: const Color.fromARGB(255, 233, 233, 233),
+        backgroundColor: const Color.fromRGBO(220, 34, 34, 1),
         body: CustomScrollView(
           slivers: [
             SliverAppBar(
@@ -82,7 +82,7 @@ class _AccountPageState extends State<AccountPage> {
               Text(
                 profile["name"]!,
                 style: const TextStyle(
-                    color: Colors.black,
+                    color: Colors.white,
                     fontSize: 18,
                     fontWeight: FontWeight.w500),
               ),
@@ -92,7 +92,7 @@ class _AccountPageState extends State<AccountPage> {
               Text(
                 profile["email"]!,
                 style: const TextStyle(
-                  color: Colors.black,
+                  color: Colors.white,
                   fontSize: 14,
                 ),
               ),
