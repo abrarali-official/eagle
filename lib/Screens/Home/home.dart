@@ -54,11 +54,13 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
             ),
           ),
           body: const Body_Page(),
-          
           bottomNavigationBar: const CustomNavbar(),
           floatingActionButtonLocation:
               FloatingActionButtonLocation.centerDocked,
           floatingActionButton: FloatingActionButton(
+            hoverColor: Colors.red,
+            elevation: 10,
+            highlightElevation: 10,
             backgroundColor: Colors.white,
             shape: const RoundedRectangleBorder(
               borderRadius: BorderRadius.all(
@@ -77,4 +79,3 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
     );
   }
 }
-

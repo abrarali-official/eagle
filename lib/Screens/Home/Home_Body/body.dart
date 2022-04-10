@@ -111,10 +111,16 @@ class _Body_PageState extends State<Body_Page> {
             child: const Text(
               "Featured",
               style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 25,
                   fontWeight: FontWeight.bold,
                   color: Colors.white),
             ),
+          ),
+          const Divider(
+            height: 15,
+            thickness: 2,
+            color: Colors.white,
+            endIndent: 20,
           ),
           const SizedBox(
             height: 10,

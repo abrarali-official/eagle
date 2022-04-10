@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class NotificationBox extends StatelessWidget {
-  const NotificationBox({ Key? key, this.number = 0, this.onTap}) : super(key: key);
+  const NotificationBox({Key? key, this.number = 0, this.onTap})
+      : super(key: key);
   final int number;
   final GestureTapCallback? onTap;
 
@@ -15,16 +16,24 @@ class NotificationBox extends StatelessWidget {
         padding: const EdgeInsets.all(5),
         decoration: BoxDecoration(
           shape: BoxShape.circle,
-          border: Border.all(color: Colors.grey.withOpacity(.3)),
+          border: Border.all(color: Colors.white.withOpacity(.8)),
         ),
-        child: number > 0 ? Badge(
-          padding: const EdgeInsets.all(3),
-          position: BadgePosition.topEnd(top: -7, end: 2),
-          badgeContent: const Text('', style:  TextStyle(color: Colors.white),),
-          child: const Icon(FontAwesomeIcons.solidBell, size: 20,)
-        )
-        :
-        const Icon(FontAwesomeIcons.solidBell, size: 20,),
+        child: number > 0
+            ? Badge(
+                padding: const EdgeInsets.all(3),
+                position: BadgePosition.topEnd(top: -7, end: 2),
+                badgeContent: const Text(
+                  '',
+                  style: TextStyle(color: Colors.white),
+                ),
+                child: const Icon(
+                  FontAwesomeIcons.solidBell,
+                  size: 20,
+                ))
+            : const Icon(
+                FontAwesomeIcons.solidBell,
+                size: 20,
+              ),
       ),
     );
   }
