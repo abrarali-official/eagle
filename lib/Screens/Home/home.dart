@@ -43,11 +43,14 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
             title: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.center,
-              children: const [
-                Padding(
-                  padding: EdgeInsets.only(left: 290),
-                  child: NotificationBox(
-                    number: 1,
+              children: [
+                SizedBox(
+                  width: MediaQuery.of(context).size.width / 4 * 3.1,
+                  child: const Padding(
+                    padding: EdgeInsets.only(left: 290),
+                    child: NotificationBox(
+                      number: 1,
+                    ),
                   ),
                 )
               ],

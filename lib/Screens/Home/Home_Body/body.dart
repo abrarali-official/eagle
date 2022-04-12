@@ -70,6 +70,7 @@ class _Body_PageState extends State<Body_Page> {
             scrollDirection: Axis.horizontal,
             padding: const EdgeInsets.only(bottom: 5, left: 15),
             child: Expanded(
+              flex: 1,
               child: Row(
                 children: const [
                   Brands_names(

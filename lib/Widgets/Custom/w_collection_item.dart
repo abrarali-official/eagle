@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:eagle/theme2/color.dart';
-
 import 'favorite_box.dart';
 
 class PopularItem extends StatelessWidget {

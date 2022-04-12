@@ -37,11 +37,14 @@ class FeaturedItem extends StatelessWidget {
           children: [
             CustomImage(
               data["image"],
-              width: 150,
+              width: 105,
               height: 180,
               radius: 10,
             ),
-            const SizedBox(width: 15),
+            const SizedBox(
+              width: 10,
+              height: 50,
+            ),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -83,6 +86,9 @@ class FeaturedItem extends StatelessWidget {
             ),
             Column(
               children: <Widget>[
+                const SizedBox(
+                  height: 50,
+                ),
                 Text(data["price"],
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
@@ -91,7 +97,7 @@ class FeaturedItem extends StatelessWidget {
                         fontWeight: FontWeight.w500,
                         color: Colors.red)),
                 const SizedBox(
-                  height: 10,
+                  height: 80,
                 ),
                 FavoriteBox(
                   iconSize: 20,

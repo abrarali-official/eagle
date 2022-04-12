@@ -1,3 +1,4 @@
+import 'package:eagle/Widgets/notification_box.dart';
 import 'package:flutter/material.dart';
 
 import '../../Widgets/Custom/Custom_nav/customnav.dart';
@@ -11,7 +12,22 @@ class CheckoutPage extends StatelessWidget {
       child: Scaffold(
         backgroundColor: const Color.fromRGBO(220, 34, 34, 1),
         bottomNavigationBar: const CustomNavbar(),
-        appBar: AppBar(),
+        appBar: AppBar(
+          backgroundColor: const Color.fromRGBO(220, 34, 34, 1),
+          elevation: 0,
+          title: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: const [
+              Padding(
+                padding: EdgeInsets.only(left: 240),
+                child: NotificationBox(
+                  number: 1,
+                ),
+              )
+            ],
+          ),
+        ),
         body: const Center(
             child: Text(
           "Checkouts",

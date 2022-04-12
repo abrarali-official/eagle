@@ -21,7 +21,7 @@ class NotificationBox extends StatelessWidget {
         child: number > 0
             ? Badge(
                 padding: const EdgeInsets.all(3),
-                position: BadgePosition.topEnd(top: -7, end: 2),
+                position: BadgePosition.topEnd(top: -9, end: 1),
                 badgeContent: const Text(
                   '',
                   style: TextStyle(color: Colors.white),

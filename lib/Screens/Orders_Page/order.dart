@@ -12,21 +12,23 @@ class OrderPage extends StatelessWidget {
         backgroundColor: const Color.fromRGBO(220, 34, 34, 1),
         bottomNavigationBar: const CustomNavbar(),
         appBar: AppBar(
-          
-            backgroundColor: const Color.fromRGBO(220, 34, 34, 1),
-            elevation: 0,
-            title: Row(
-              mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.center,
-              children: const[
-                Padding(
-                  padding:  EdgeInsets.only(left: 290),
+          backgroundColor: const Color.fromRGBO(220, 34, 34, 1),
+          elevation: 0,
+          title: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              SizedBox(
+                width: MediaQuery.of(context).size.width / 4 * 3.1,
+                child: const Padding(
+                  padding: EdgeInsets.only(left: 290),
                   child: NotificationBox(
                     number: 1,
                   ),
-                )
-              ],
-            ),
+                ),
+              )
+            ],
+          ),
         ),
         body: const Center(
             child: Text(
